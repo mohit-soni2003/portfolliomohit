@@ -1,0 +1,75 @@
+.page-1 {
+    border: 0px solid gray;
+    margin: 1.5% auto;
+    width: clamp(850px, 75%, 1200px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+/* // Social Media Links --------- */
+.social-media {
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0px;
+}
+.social-media div{
+    font-size: 2.2rem;
+    color: var(--second-color);
+}
+.social-media div:hover{
+    color: var(--hover-color);
+}
+/* ----Center Profile description ---------- */
+.profile {
+    width: 65%;
+    padding: 0px 10px;
+}
+
+.profile-heading{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.profile-tech{
+    color: rgb(215, 0, 0);
+    font-size: 1.2rem;
+    margin-bottom: 1%;
+    font-weight: 500;
+}
+.profile-desc{
+    font-size: 1.1rem;
+    color: rgb(118, 118, 118);
+    font-weight: 500;
+    margin-bottom: 3%;
+    
+}
+.cnt-me-btn{
+    font-size: 1.1rem;
+    background-color: var(--second-color);
+    display: inline-block;
+    padding: auto;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 8px;
+}
+.cnt-me-btn:hover{
+    background-color: var(--hover-color);
+}
+/* ----------image --------- */
+.profile-photo {
+    width: 30%;
+    min-width: 250px;
+}
+
+.profile-photo img {
+    width: 100%;
+    border-radius: 0px 110px 0px 110px;
+}
+
+.social-media,
+.profile,
+.profile-photo {
+    border: 0px solid red;
+}
