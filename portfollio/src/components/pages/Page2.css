@@ -1,2 +1,59 @@
-        
-        
+.page-2{
+    border: 0px solid gray;
+    margin: 1.5% auto;
+    width: clamp(850px, 75%, 1200px);
+}
+.pg-2-heading{
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 600;
+    padding: clamp(50px ,8% ,80px) 0px;
+}
+
+.abt-me-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.abt-me-photo{
+    width: 50%;
+    min-width: 250px;
+}
+.abt-me-photo img{
+    width: 100%;
+    border-radius: 10px;
+}
+.abt-me-desc{
+    width: 50%;
+    margin-left:clamp(15px , 3% , 30px);
+    padding-bottom: 15px;
+}
+
+.abt-me-caption{
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+    border-bottom: 2px solid gainsboro;
+}
+
+/* -----------------------------Feature------------------ */
+
+.pg-2-feature-cont{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.down-cv-btn{
+    background-color: var(--second-color);
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-top: 3%;
+    color:  white;
+}
+.down-cv-btn:hover{
+    background-color: var(--hover-color);
+}
