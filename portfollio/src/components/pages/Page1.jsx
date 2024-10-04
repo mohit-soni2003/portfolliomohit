@@ -8,9 +8,9 @@ import { FaSquareInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
-
-
-
+import { FaGithub } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+import { SiGeeksforgeeks } from "react-icons/si";
 
 
 export default function Page1() {
@@ -22,6 +22,9 @@ export default function Page1() {
                     <div><FaSquareInstagram /></div>
                     <div><FaLinkedin /></div>
                     <div><FaYoutube /></div>
+                    <div><FaGithub /></div>
+                    <div><SiLeetcode /></div>
+                    <div><SiGeeksforgeeks /></div>
                 </div>
                 <div className="profile">
                     <div className="profile-heading">

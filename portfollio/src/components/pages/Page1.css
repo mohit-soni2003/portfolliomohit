@@ -16,7 +16,7 @@
     margin: auto 0px;
 }
 .social-media div{
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: var(--second-color);
 }
 .social-media div:hover{
@@ -29,18 +29,18 @@
 }
 
 .profile-heading{
-    font-size: 3rem;
+    font-size: 3.3rem;
     font-weight: 700;
 }
 .profile-tech{
     color: rgb(215, 0, 0);
-    font-size: 1.2rem;
-    margin-bottom: 1%;
+    font-size: 1.3rem;
+    margin-bottom: 3%;
     font-weight: 500;
 }
 .profile-desc{
-    font-size: 1.1rem;
-    color: rgb(118, 118, 118);
+    font-size: 1.2rem;
+    color: rgba(97, 97, 97, 0.724);
     font-weight: 500;
     margin-bottom: 3%;
     
@@ -72,4 +72,50 @@
 .profile,
 .profile-photo {
     border: 0px solid red;
+}
+
+@keyframes animate-from-left {
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes animate-from-right {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes animate-from-bottom{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.social-media{
+    animation: animate-from-left 1s ease-out;
+}
+.profile-heading{
+    animation: animate-from-left 1s ease-out;
+}
+.profile-desc , .profile-tech{
+    animation: animate-from-right 1s ease-out;
+}
+.profile-photo , .cnt-me-btn{
+    animation: animate-from-bottom 1s ease-out;
+
 }
