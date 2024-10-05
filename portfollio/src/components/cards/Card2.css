@@ -1,11 +1,11 @@
 .card2{
     width: 100%;
-    min-width: 300px;
+    min-width: 250px;
     border: 1px solid gainsboro;
     box-shadow: 1px 1px 15px rgba(220, 220, 220, 0.692);
     border-radius: 5px;
     padding: 10px 15px;
-    margin-bottom: 50px;
+
 }
 
 .card2-l1{

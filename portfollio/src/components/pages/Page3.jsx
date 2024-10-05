@@ -1,9 +1,13 @@
 import React from 'react'
+
+import Card1 from '../cards/card1'
+import Card2 from '../cards/Card2'
+
 import "./Page3.css"
 import "../utility/utility.css"
 import "../utility/syle.css"
-
 import "./Page3.css"
+
 export default function Page3() {
     return (
         <>
@@ -23,10 +27,19 @@ export default function Page3() {
 
                 <div className="skill-edu-container">
                     <div className="edu-container">
-
+                        <div className="edu-card1"><Card1></Card1></div>
+                        <div className="edu-card1"><Card1></Card1></div>
+                        <div className="edu-card1"><Card1></Card1></div>
                     </div>
                     <div className="skillcontainer">
-
+                        <div className="skill-card2"><Card2></Card2></div>
+                        <div className="skill-card2"><Card2></Card2></div>
+                        <div className="skill-card2"><Card2></Card2></div>
+                        <div className="skill-card2"><Card2></Card2></div>
+                        <div className="skill-card2"><Card2></Card2></div>
+                        <div className="skill-card2"><Card2></Card2></div>
+                        <div className="skill-card2"><Card2></Card2></div>
+                        <div className="skill-card2"><Card2></Card2></div>
                     </div>
                 </div>
 
