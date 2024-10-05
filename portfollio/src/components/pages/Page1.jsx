@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Page1.css"
-import "../syle.css"
+import "../utility/utility.css"
+import "../utility/syle.css"
 
 // icons-----
 import { FaGlobe } from "react-icons/fa";

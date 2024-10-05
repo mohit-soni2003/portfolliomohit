@@ -1,0 +1,28 @@
+.card2{
+    width: 100%;
+    min-width: 300px;
+    border: 1px solid gainsboro;
+    box-shadow: 1px 1px 15px rgba(220, 220, 220, 0.692);
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 50px;
+}
+
+.card2-l1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-weight: 600;
+}
+.card2-bar{
+    width: 100%;
+    background-color: var(--scroll-bar-color);
+    margin: 10px 0px;
+    height: 8px;
+    overflow: hidden;
+}
+.card2-fill{
+    background-color: var(--hover-color);
+    width: 50%;
+    height: 100%;
+}

@@ -1,7 +1,8 @@
 import React from 'react'
 import "./Page2.css"
-import "../syle.css"
-import "../utility.css"
+import "../utility/utility.css"
+import "../utility/syle.css"
+
 
 import { FaFileDownload } from "react-icons/fa";
 

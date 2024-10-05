@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Page3.css"
-import "../utility.css"
-import "../syle.css"
+import "../utility/utility.css"
+import "../utility/syle.css"
 
 import "./Page3.css"
 export default function Page3() {
@@ -26,7 +26,7 @@ export default function Page3() {
 
                     </div>
                     <div className="skillcontainer">
-                        
+
                     </div>
                 </div>
 
