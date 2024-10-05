@@ -1,0 +1,13 @@
+.page3{
+    border: 0px solid gray;
+    margin: 1.5% auto;
+    width: clamp(850px, 75%, 1200px);
+}
+
+.heading2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.heading2-desc{
+    font-size: 1.2rem;
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Page2.css"
 import "../syle.css"
+import "../utility.css"
 
 import { FaFileDownload } from "react-icons/fa";
 
@@ -15,7 +16,7 @@ export default function Page2() {
         <>
             <div className="page-2">
 
-                <div className="pg-2-heading">
+                <div className="pg-2-heading pg-heading">
                     About Me
                 </div>
 
@@ -32,18 +33,19 @@ export default function Page2() {
                         <div className="pg-2-feature-cont">
                             {/* feature-1----- */}
                             <div className="pg2-fea">
-                            <div style={{fontSize:"1.6rem" , fontWeight:"500"}}>300+</div>
+                            <div style={{fontSize:"1.6rem" , fontWeight:"500"}}>2+</div>
                             <div style={{fontSize:"1.1rem" , fontWeight:"500" , color:"rgba(0,0,0,0.4)"}}>Years of Experience</div>
-                                
                             </div>
+                            {/* feature-2----- */}
                             <div className="pg2-fea">
                             <div style={{fontSize:"1.6rem" , fontWeight:"500"}}>300+</div>
-                            <div style={{fontSize:"1.1rem" , fontWeight:"500" , color:"rgba(0,0,0,0.4)"}}>Years of Experience</div>
+                            <div style={{fontSize:"1.1rem" , fontWeight:"500" , color:"rgba(0,0,0,0.4)"}}>DSA Problems Solved</div>
                             
                             </div>
+                            {/* feature-3----- */}
                             <div className="pg2-fea">
-                            <div style={{fontSize:"1.6rem" , fontWeight:"500"}}>300+</div>
-                            <div style={{fontSize:"1.1rem" , fontWeight:"500" , color:"rgba(0,0,0,0.4)"}}>Years of Experience</div>
+                            <div style={{fontSize:"1.6rem" , fontWeight:"500"}}>40+</div>
+                            <div style={{fontSize:"1.1rem" , fontWeight:"500" , color:"rgba(0,0,0,0.4)"}}>Apeared in Coding Contests</div>
                             </div>
                         </div>
 
@@ -56,3 +58,4 @@ export default function Page2() {
         </>
     )
 }
+ 

@@ -3,13 +3,6 @@
     margin: 1.5% auto;
     width: clamp(850px, 75%, 1200px);
 }
-.pg-2-heading{
-    font-size: 2.5rem;
-    text-align: center;
-    font-weight: 600;
-    padding: clamp(50px ,8% ,80px) 0px;
-}
-
 .abt-me-container{
     display: flex;
     align-items: center;
@@ -44,6 +37,9 @@
     align-items: center;
     justify-content: space-between;
 }
+.pg2-fea{
+    max-width:150px;
+}
 .down-cv-btn{
     background-color: var(--second-color);
     display: inline-block;
@@ -57,3 +53,49 @@
 .down-cv-btn:hover{
     background-color: var(--hover-color);
 }
+
+
+/* ---animation -------- */
+
+@keyframes animate-from-left {
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes animate-from-right {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes animate-from-bottom{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.pg-2-heading{
+    animation: animate-from-left 2s ease-out;
+}
+.abt-me-photo{
+    animation: animate-from-bottom 2s ease-out;
+}
+.abt-me-desc{
+    animation: animate-from-right 2s ease-out;
+}
+ 
