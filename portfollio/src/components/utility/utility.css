@@ -1,0 +1,46 @@
+.pg-heading {
+    font-size: 2.3rem;
+    text-align: center;
+    font-weight: 600;
+    margin: clamp(50px ,8% ,80px) 0px;
+    position: relative; /* This is important to contain the absolute positioning */
+    border: 0px solid red;
+}
+
+.pg-heading::before {
+    content: 'About Me'; /* Same text */
+    position: absolute;
+    top: -50px; /* Adjust the vertical positioning */
+    left: 0; /* Adjust the horizontal positioning */
+    font-size: 4.3rem; /* Shadow text size (3x larger) */
+    color: rgba(0, 0, 0, 0.1); /* Light shadow color */
+    z-index: -1; /* Push the shadow behind the main text */
+    font-weight: bold;
+    width: 100%; /* Ensure the pseudo element spans the width of the parent */
+    text-align: center; /* Center the shadow text */
+
+
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0)); /* Fades from light black to transparent */
+    -webkit-background-clip: text; /* Clips the background to the text */
+    color: transparent; /* Makes the text color transparent so the background gradient shows */
+}
+.pg3-heading::before{
+content:  'Skills';
+}
+.pg6-heading::before{
+    content: 'Achievements';
+}
+.pg7-heading::before{
+    content: 'Gallery';
+}
+.pg8-heading::before{
+    content: 'Contact Me';
+}
+
+.heading2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.heading2-desc{
+    font-size: 1.2rem;
+}

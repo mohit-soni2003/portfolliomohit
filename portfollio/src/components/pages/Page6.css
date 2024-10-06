@@ -1,0 +1,15 @@
+.page6{
+    border: 0px solid gray;
+    margin: 1.5% auto;
+    width: clamp(850px, 75%, 1200px);
+}
+
+.ach-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ach-container>div{
+    margin: 10px 20px;
+}
+

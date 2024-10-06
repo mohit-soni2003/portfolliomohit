@@ -1,0 +1,85 @@
+.project-card{
+    width: 300px;
+    height: 400px;
+    border: 0px solid rgb(189, 20, 20);
+    box-shadow: 1px 1px 15px rgba(220, 220, 220, 0.847);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(247, 254, 255, 0.753);
+    border-radius: 15px;
+    padding: 0px 0px;
+    border-bottom: 3px solid var(--hover-color)
+}
+
+.project-image{
+    width: 100%;
+    align-items: center;
+}
+.project-image img{
+    border-radius: 15px;
+    height: 200px;
+    width: 100%;
+    margin: 0px auto;
+}
+.project-name{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0px 10px;
+    margin-top: 15px;
+}
+.project-desc{
+    margin: 0px 10px;
+    text-align: left;
+    font-size: 1rem;
+}
+.view-more{
+    color: var(--second-color);
+    font-weight: 600;
+    margin: 0px 10px;
+    margin-bottom: 15px;
+}
+.view-more:hover{
+    color: var(--hover-color);
+}
+
+
+
+
+
+
+/* //For achievemtn Card CSS------------ */
+
+.achievement-name{
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 10px 10px ;
+    font-weight: 600;
+}
+.achievement-card{
+    width: 250px;
+    height: 300px;
+    border: 0px solid rgb(189, 20, 20);
+    box-shadow: 1px 1px 15px rgba(220, 220, 220, 0.847);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgba(247, 254, 255, 0.753);
+    border-radius: 15px;
+    padding: 0px 0px;
+    border-bottom: 3px solid var(--hover-color)
+}
+
+.achievement-image{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.achievement-image img{
+    border-radius: 15px;
+    height: 180px;
+    width: 100%;
+    margin: 0px auto;
+}

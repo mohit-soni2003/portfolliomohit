@@ -1,0 +1,18 @@
+.page4{
+    border: 0px solid gray;
+    margin: 1.5% auto;
+    width: clamp(850px, 75%, 1200px);
+}
+
+.pg4-card-container{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2%;
+    flex-wrap: wrap;
+}
+.pg4-card{
+    width: clamp(300px , 30% , 450px);
+    margin: 10px 10px;
+}

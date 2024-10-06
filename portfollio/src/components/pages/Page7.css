@@ -1,0 +1,7 @@
+.page7{
+    border: 0px solid gray;
+    margin: 1.5% auto;
+    width: clamp(850px, 75%, 1200px);
+}
+
+
