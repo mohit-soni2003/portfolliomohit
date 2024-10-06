@@ -3,6 +3,7 @@ import "./Page6.css"
 import "../utility/syle.css"
 import "../utility/utility.css"
 
+import { achievement } from '../../data'
 import AchievementCard from "../cards/AchievementCard"
 
 export default function Page6() {
@@ -13,9 +14,12 @@ export default function Page6() {
         </div>
 
         <div className="ach-container">
-        <AchievementCard></AchievementCard>
-        <AchievementCard></AchievementCard>
-        <AchievementCard></AchievementCard>
+          {achievement.map((item)=>{
+            return(
+              <AchievementCard achievement={item}></AchievementCard>
+            )
+          }
+          )}
         </div>
     </div>
   )

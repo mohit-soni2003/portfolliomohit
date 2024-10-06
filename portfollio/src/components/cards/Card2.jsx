@@ -1,21 +1,20 @@
-import React from 'react'
-import "./card2.css"
+import React from 'react';
+import './card2.css';
 
-
-export default function Card2() {
+export default function Card2({ skill }) {
     return (
         <>
             <div className="card2">
                 <div className="card2-l1">
-                    <div>HTML</div>
-                    <div>95%</div>
+                    <div>{skill.skill}</div>
+                    <div>{skill.percentage}</div> {/* Display percentage */}
                 </div>
                 <div className="card2-bar">
-                    <div className="card2-fill">
-                    
+                    {/* Set the width dynamically with the percentage */}
+                    <div className="card2-fill" style={{ width: `${skill.percentage}` }}>
                     </div>
                 </div>
             </div>
         </>
-    )
+    );
 }

@@ -8,6 +8,7 @@ import "../utility/utility.css"
 import "../utility/syle.css"
 import "./Page3.css"
 
+import { skill,edu_qualification} from '../../data'
 export default function Page3() {
     return (
         <>
@@ -20,26 +21,21 @@ export default function Page3() {
                     Skills and Education
                 </div>
                 <div className="skill-edu-desc heading2-desc">
-                As a computer engineering student, I explore emerging technologies, gaining expertise through projects and coding to build impactful solutions.
+                    As a computer engineering student, I explore emerging technologies, gaining expertise through projects and coding to build impactful solutions.
                 </div>
 
                 {/* -----------flex box of skill and education--------------     */}
 
                 <div className="skill-edu-container">
                     <div className="edu-container">
-                        <div className="edu-card1"><Card1></Card1></div>
-                        <div className="edu-card1"><Card1></Card1></div>
-                        <div className="edu-card1"><Card1></Card1></div>
+                        {edu_qualification.map((item)=>( 
+                            <div className="edu-card1"><Card1 qualification={item}></Card1></div>
+                        ))}
                     </div>
                     <div className="skillcontainer">
-                        <div className="skill-card2"><Card2></Card2></div>
-                        <div className="skill-card2"><Card2></Card2></div>
-                        <div className="skill-card2"><Card2></Card2></div>
-                        <div className="skill-card2"><Card2></Card2></div>
-                        <div className="skill-card2"><Card2></Card2></div>
-                        <div className="skill-card2"><Card2></Card2></div>
-                        <div className="skill-card2"><Card2></Card2></div>
-                        <div className="skill-card2"><Card2></Card2></div>
+                        {skill.map((item) => (
+                            <div className="skill-card2"><Card2 skill={item}></Card2></div>
+                        ))}
                     </div>
                 </div>
 

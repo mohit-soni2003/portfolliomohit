@@ -5,14 +5,14 @@ import "./ProjectCard.css"
 import { FaAnglesDown } from "react-icons/fa6";
 
 
-export default function AchievementCard() {
+export default function AchievementCard({achievement}) {
     return (
-        <div className="project-card achievement-card">
-            <div className="project-image">
-                <img src="https://clinic-hub-git-main-mohit-sonis-projects-6fb4d728.vercel.app/assets/logo-D38eqGl7.png" alt="" />
+        <div className=" achievement-card">
+            <div className="achievement-image">
+                <img src={achievement.image} alt="" />
             </div>
             <div className="achievement-name">
-                ClinicHub
+                {achievement.name}
             </div>
             <div className="view-more">
                 View More &nbsp; <FaAnglesDown />

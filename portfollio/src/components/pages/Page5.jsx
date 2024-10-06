@@ -3,6 +3,7 @@ import "./Page5.css"
 import "../utility/utility.css"
 import ProjectCard from '../cards/ProjectCard';
 
+import {project} from '../../data';
 
 export default function Page5() {
     return (
@@ -12,14 +13,14 @@ export default function Page5() {
                     Projects
                 </div>
                 <div className="project-container">
-                  <ProjectCard></ProjectCard>  
-                  <ProjectCard></ProjectCard>  
-                  <ProjectCard></ProjectCard>  
-                  <ProjectCard></ProjectCard>  
-                  <ProjectCard></ProjectCard>  
-                  <ProjectCard></ProjectCard>  
+                    {project.map((item) => {
+                        return (
+                            <ProjectCard project={item}></ProjectCard>
+                        )
+                    }
+                    )}
                 </div>
             </div>
-        </> 
+        </>
     )
 }
