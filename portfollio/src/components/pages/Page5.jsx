@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Page5.css"
 import "../utility/utility.css"
-import ProjectCard from '../cards/ProjectCard';
+import ProjectCard from '../cards/ProjectCard.jsx';
 
 import {project} from '../../data';
 

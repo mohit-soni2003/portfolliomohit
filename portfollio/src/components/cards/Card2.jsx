@@ -1,5 +1,5 @@
 import React from 'react';
-import './card2.css';
+import './Card2.css';
 
 export default function Card2({ skill }) {
     return (

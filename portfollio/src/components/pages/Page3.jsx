@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Card1 from '../cards/card1'
-import Card2 from '../cards/Card2'
+import Card1 from '../cards/card1.jsx'
+import Card2 from '../cards/Card2.jsx'
 
 import "./Page3.css"
 import "../utility/utility.css"

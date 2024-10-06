@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Page4.css"
 import "../utility/utility.css"
-import Card3 from "../cards/Card3"
+import Card3 from "../cards/Card3.jsx"
 
 export default function Page4() {
   return (
