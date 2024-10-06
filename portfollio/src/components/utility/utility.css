@@ -27,6 +27,15 @@
 .pg3-heading::before{
 content:  'Skills';
 }
+.pg6-heading::before{
+    content: 'Achievements';
+}
+.pg7-heading::before{
+    content: 'Gallery';
+}
+.pg8-heading::before{
+    content: 'Contact Me';
+}
 
 .heading2{
     font-size: 2rem;

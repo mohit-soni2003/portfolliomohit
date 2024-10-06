@@ -1,0 +1,71 @@
+.page8{
+    border: 0px solid gray;
+    margin: 1.5% auto;
+    width: clamp(850px, 75%, 1200px);
+}
+
+.pg8-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 0px solid red;
+}
+.pg8-left{
+    border: 0px solid red;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    min-width: 350px;
+}
+.pg8-right{
+    border: 0px solid rgb(245, 145, 228);
+    width: 50%;
+    min-width: 350px;
+
+}
+.contact-links{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.contact-link1{
+    display: flex;
+    margin: 10px;
+}
+.contact-link1>div{
+    font-size: 1.3rem;
+    margin-right: 20px;
+}
+
+/* -----------right form------------- */
+.pg8-right-l1{
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.pg8-right-l1 span{
+    color: rgba(0,0,0,0.5);
+}
+
+.form-table table {
+    width: 100%; /* Set the width of the table */
+    border-collapse: collapse; /* Optional for border handling */
+}
+
+.pg8-right td {
+    border: 0px solid rgb(1, 25, 213);
+    width: 45%; /* Or any other value based on your needs */
+    padding: 10px 10px 10px 0px;
+}
+
+.form-table input {
+    width: 100%; /* Input elements take the full width of td */
+    height: 55px;
+    background-color: rgb(232, 237, 255);
+    padding-left: 10px;
+    border:none;
+}
+
+#tdimp{
+    height: 70px;
+}

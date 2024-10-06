@@ -1,0 +1,15 @@
+.page5{
+    border: 0px solid gray;
+    margin: 1.5% auto;
+    width: clamp(850px, 75%, 1200px);
+}
+.project-container{
+    display:flex ;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.project-container>div{
+    margin: 30px 12px;
+}
