@@ -63,7 +63,7 @@ export default function Page8() {
 
                             <tr>
                                 <td> <input type="text" placeholder='Name' /></td>
-                                <td> <input type="text" placeholder='Phone No' /></td>
+                                <td> <input type="tel" placeholder='Phone No' /></td>
                             </tr>
                             <tr>
                                 <td><input type="email" name="" id="" placeholder='Email' /></td>
@@ -72,7 +72,9 @@ export default function Page8() {
                             <tr>
                                 <td  colSpan={2} rowSpan={2}><input type="text" name=""  id="tdimp" placeholder='Description' /></td>
                             </tr>
+                            
                             </table>
+                            <div className="send-msg">Send Message</div>
                         </div>
                     </div>
 

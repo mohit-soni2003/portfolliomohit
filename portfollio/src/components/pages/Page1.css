@@ -15,11 +15,11 @@
     justify-content: center;
     margin: auto 0px;
 }
-.social-media div{
+.social-media a{
     font-size: 2rem;
     color: var(--second-color);
 }
-.social-media div:hover{
+.social-media a:hover{
     color: var(--hover-color);
 }
 /* ----Center Profile description ---------- */

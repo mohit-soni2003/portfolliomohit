@@ -69,3 +69,17 @@
 #tdimp{
     height: 70px;
 }
+
+.send-msg{
+    font-size: 1.2rem;
+    background-color: var(--second-color);
+    display: inline-block;
+    color: white;
+    font-weight: 600;
+    padding: 5px 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+.send-msg:hover{
+   background-color: var(--hover-color);
+}

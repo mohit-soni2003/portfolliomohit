@@ -1,0 +1,67 @@
+.big-footer{
+    width: 100%;
+    background-color: var(--second-color);
+}
+.footer{
+    border: 0px solid gray;
+    margin: 1.5% auto;
+    width: clamp(850px, 75%, 1200px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: clamp(20px , 3% , 25px) ;
+}
+.footer-left , .footer-mid , .footer-right{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.footer-left-l1{
+    font-size: 2.3rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 6px rgb(187, 211, 255);
+}
+.footer-left-l2{
+    font-size: 1.3rem;
+}
+.footer-mid-l1{
+    font-size: 1.3rem;
+}
+.footer-mid-l2{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.footer-mid-l2 a{
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+}
+.footer-mid-l2>div{
+    margin: 20px 20px 0px 0px ;
+}
+
+
+/* ---------------footer right---------- */
+.footer-right-l1 , .footer-right-l3{
+    font-size: 1.3rem;
+}
+.footer-right-l2, .footer-right-l4{
+    display: flex;
+}
+.footer-right-l2>div, .footer-right-l4>div {
+    margin: 15px 20px 15px 0px;
+}
+.footer-right-l2 a:hover, .footer-right-l4 a:hover , .footer-mid-l2 a:hover{
+    color:gainsboro;
+}
+.footer-right-l2 a , .footer-right-l4 a{
+    color: white;
+}
+
+.copyright{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+}

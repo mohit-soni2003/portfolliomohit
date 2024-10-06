@@ -13,23 +13,26 @@ import { FaGithub } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { SiGeeksforgeeks } from "react-icons/si";
 
+import {Link} from "react-router-dom" 
+import { social_links } from '../../data';
+import { personal_detail } from '../../data';
 
 export default function Page1() {
-    return (
+    return ( 
         <>
             <div className="page-1">
                 <div className="social-media">
-                    <div><FaGlobe></FaGlobe></div>
-                    <div><FaSquareInstagram /></div>
-                    <div><FaLinkedin /></div>
-                    <div><FaYoutube /></div>
-                    <div><FaGithub /></div>
-                    <div><SiLeetcode /></div>
-                    <div><SiGeeksforgeeks /></div>
+                    <div><Link to="/"><FaGlobe/></Link></div>
+                    <div><Link to={social_links.instagram} target='new'><FaSquareInstagram /></Link></div>
+                    <div><Link to={social_links.linkedin} target='new'><FaLinkedin /></Link></div>
+                    <div><Link to={social_links.youtube} target='new'><FaYoutube /></Link></div>
+                    <div><Link to={social_links.github} target='new'><FaGithub /></Link></div>
+                    <div><Link to={social_links.leetcode} target='new'><SiLeetcode /></Link></div>
+                    <div><Link to={social_links.gfg} target='new'><SiGeeksforgeeks /></Link></div>
                 </div>
                 <div className="profile">
                     <div className="profile-heading">
-                        This is Mohit Soni
+                        This is {personal_detail.name}
                     </div>
                     <div className="profile-tech">
                         Data Structure and Algorithms || Java  || Database Management System(DBMA)|| SQL || Operating System || OOPS ||MongoDb|| Node || Express || React || React-Native|| MERN Stack Developer

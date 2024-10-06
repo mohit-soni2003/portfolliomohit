@@ -6,6 +6,8 @@ import "../utility/syle.css"
 
 import { FaFileDownload } from "react-icons/fa";
 
+import { personal_detail } from '../../data';
+
 
 import sih2024 from "/images/sih2024.jpg"
 import hackindore from "/images/hackindore.jpg"
@@ -26,7 +28,7 @@ export default function Page2() {
                         <img src={hackindoregrp} alt="" />
                     </div>
                     <div className="abt-me-desc">
-                        <h1>I'm Mohit Soni</h1>
+                        <h1>I'm {personal_detail.name}</h1>
                         <div className="abt-me-caption">
                             As a 3rd-year engineering student at IET DAVV, I’m passionate about leveraging technologies like Data Structures & Algorithms, Java, DBMS, SQL, and the MERN stack to develop working prototypes. I had participated in tech competitions, hackathons, and workshops, focusing on web and mobile app development, and programming solutions.
                         </div>

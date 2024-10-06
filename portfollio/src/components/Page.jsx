@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Page.css"
 import Navpan from './unique_component/Navpan'
+import Footerpan from './unique_component/Footerpan'
 import Page1 from './pages/Page1'
 import Page2 from './pages/Page2'
 import Page3 from './pages/Page3'
@@ -22,6 +23,7 @@ export default function Page() {
     <Page5></Page5>
     <Page6></Page6>
     <Page8></Page8>
+    <Footerpan></Footerpan>
     {/* <Page7></Page7> */}
     </div>
     </>
