@@ -6,8 +6,8 @@ import Card3 from "../cards/Card3.jsx"
 export default function Page4() {
   return (
     <>
-    <div className="page4">
-        <div className="heading2" data-aos="fade-right">
+    <div className="page4" id='competition'>
+        <div className="heading2" data-aos="fade-right" >
             Competitions and Hackhthons
         </div>
         <div className="heading2-desc" data-aos="fade-right">

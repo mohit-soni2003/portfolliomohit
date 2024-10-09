@@ -6,7 +6,7 @@ import "../utility/utility.css"
 export default function Page7() {
     return (
         <>
-            <div className="page7">
+            <div className="page7" id='gallery'>
                 <div className="pg-heading pg7-heading">
                     Gallery
                 </div>

@@ -17,7 +17,7 @@ import hackindoregrp from "/images/hackindoregrp.jpg"
 export default function Page2() {
     return (
         <>
-            <div className="page-2">
+            <div className="page-2" id='about'>
 
                 <div className="pg-2-heading pg-heading"  data-aos="fade-right">
                     About Me

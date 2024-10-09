@@ -12,7 +12,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 export default function Page8() {
     return (
         <>
-            <div className="page8">
+            <div className="page8" id='contact'>
                 <div className="pg-heading pg8-heading" data-aos="fade-right">
                     Contact Me
                 </div>

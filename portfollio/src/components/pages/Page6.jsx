@@ -8,7 +8,7 @@ import AchievementCard from "../cards/AchievementCard"
 
 export default function Page6() {
   return (
-    <div className="page6">
+    <div className="page6" id='achievement'>
         <div className="pg-heading pg6-heading">
             Achievements
         </div>

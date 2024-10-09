@@ -12,7 +12,7 @@ import { skill,edu_qualification} from '../../data'
 export default function Page3() {
     return (
         <>
-            <div className="page3">
+            <div className="page3" id='skill'>
                 {/* ---------------Skill and education heading-------- */}
                 <div className="pg-heading pg3-heading" data-aos="fade-right" >
                     Skills
