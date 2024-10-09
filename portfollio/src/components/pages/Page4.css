@@ -1,7 +1,7 @@
 .page4{
     border: 0px solid gray;
-    margin: 1.5% auto;
-    width: clamp(850px, 75%, 1200px);
+    /* margin: 1.5% auto;
+    width: clamp(850px, 75%, 1200px); */
 }
 
 .pg4-card-container{
@@ -15,4 +15,15 @@
 .pg4-card{
     width: clamp(300px , 30% , 450px);
     margin: 10px 10px;
-}
+} 
+
+
+
+
+
+@media (max-width: 700px) {
+    .pg4-card{
+        width: 100%;
+        margin: 15px 0px;
+    }
+  }

@@ -1,7 +1,7 @@
 .page3{
     border: 0px solid gray;
-    margin: 1.5% auto;
-    width: clamp(850px, 75%, 1200px);
+    /* margin: 1.5% auto;
+    width: clamp(850px, 75%, 1200px); */
 }
 
 /* heading2 and heading2-desc CSS are wrtten on Utility.css----- */
@@ -11,7 +11,7 @@
     align-items: flex-start;
     justify-content: space-between;
     border: 0px solid red;
-    margin-top: clamp(20px,3% , 40px);
+    margin-top: clamp(20px,3% , 40px); 
 }
 .edu-container{
     border: 0px solid gray;
@@ -39,3 +39,29 @@
     width: 49% ;
     margin: clamp(8px , 1% , 10px) 0px ;
 }
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+    .skill-edu-container{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .edu-container{
+        width: 100%;
+    }
+    .skillcontainer{
+        margin: 10px 0px;
+    }
+    .skill-card2{
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .edu-card1{width: 100%;}
+  }

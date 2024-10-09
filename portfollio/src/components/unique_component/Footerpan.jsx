@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { social_links } from '../../data';
 
 
-// import icons--------
+// import icons-------- 
 
 import { FaGlobe } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
@@ -22,7 +22,7 @@ import { SiCodeforces } from "react-icons/si";
 export default function Footerpan() {
   return (
     <>
-    <div className="big-footer">
+
     <div className="footer">
         <div className="footer-left">
         <div className="footer-left-l1">Mohit Soni</div>
@@ -60,7 +60,7 @@ export default function Footerpan() {
         </div>
     </div>
         <div className="copyright">@ 2024 by Mohit Soni. All rights reserved</div>
-    </div>
+    
     </>
 
   )

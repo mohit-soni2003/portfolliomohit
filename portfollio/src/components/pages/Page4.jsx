@@ -18,9 +18,6 @@ export default function Page4() {
             <div className="pg4-card"><Card3></Card3></div>
             <div className="pg4-card"><Card3></Card3></div>
             <div className="pg4-card"><Card3></Card3></div>
-            <div className="pg4-card"><Card3></Card3></div>
-            <div className="pg4-card"><Card3></Card3></div>
-            <div className="pg4-card"><Card3></Card3></div>
         </div>
     </div>
     </>

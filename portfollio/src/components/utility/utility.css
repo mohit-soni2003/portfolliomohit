@@ -24,6 +24,9 @@
     -webkit-background-clip: text; /* Clips the background to the text */
     color: transparent; /* Makes the text color transparent so the background gradient shows */
 }
+.pg5-heading::before{
+    content: 'Projects';
+}
 .pg3-heading::before{
 content:  'Skills';
 }
@@ -44,3 +47,23 @@ content:  'Skills';
 .heading2-desc{
     font-size: 1.2rem;
 }
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+    .heading2{
+        font-size: 1.9rem;
+        font-weight: 500;
+    }
+    .heading2-desc{
+        font-size: 1.1rem;
+    }
+    .pg-heading::before {
+        font-size: 3.5rem;
+        top:-35px
+    }
+  }

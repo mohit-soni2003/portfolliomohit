@@ -9,7 +9,7 @@ export default function Page5() {
     return (
         <>
             <div className="page5">
-                <div className="pg-heading">
+                <div className="pg-heading pg5-heading">
                     Projects
                 </div>
                 <div className="project-container">
@@ -19,7 +19,7 @@ export default function Page5() {
                         )
                     }
                     )}
-                </div>
+                </div> 
             </div>
         </>
     )

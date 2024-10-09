@@ -3,7 +3,7 @@ import "./Page1.css"
 import "../utility/utility.css"
 import "../utility/syle.css"
 
-// icons-----
+// icons----- 
 import { FaGlobe } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
@@ -13,7 +13,7 @@ import { FaGithub } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { SiGeeksforgeeks } from "react-icons/si";
 
-import {Link} from "react-router-dom" 
+import {Link} from "react-router-dom"  
 import { social_links } from '../../data';
 import { personal_detail } from '../../data';
 

@@ -14,18 +14,25 @@ import Page8 from './pages/Page8'
 export default function Page() {
   return (
     <>
-    <div className="main-page">
-    <Navpan></Navpan>
-    <Page1></Page1>
-    <Page2></Page2>
-    <Page3></Page3>
-    <Page4></Page4>
-    <Page5></Page5>
-    <Page6></Page6>
-    <Page8></Page8>
-    <Footerpan></Footerpan>
-    {/* <Page7></Page7> */}
-    </div>
+      <div className="main-page">
+
+        <div className="main-pg-container">
+          <Navpan></Navpan>
+          <Page1></Page1>
+          <Page2></Page2>
+          <Page3></Page3>
+          <Page4></Page4>
+          <Page5></Page5>
+          <Page6></Page6>
+          <Page8></Page8>
+        </div>
+        <div className="width100">
+          <div className="main-footer-container">
+            <Footerpan></Footerpan>
+          </div>
+        </div>
+        {/* <Page7></Page7> */}
+      </div>
     </>
   )
 }

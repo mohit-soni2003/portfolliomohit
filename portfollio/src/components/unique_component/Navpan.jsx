@@ -2,6 +2,8 @@ import React from 'react'
 import "./Navpan.css"
 import Button from 'react-bootstrap/Button';
 import { Link } from "react-router-dom";
+import { VscThreeBars } from "react-icons/vsc";
+
 
 import { personal_detail } from '../../data';
 
@@ -11,7 +13,7 @@ export default function Navpan() {
       <div className="nav-container">
 
         <div className="navbar">
-          <div className="nav-left">
+          <div className="nav-left"> 
             {personal_detail.name}
           </div>
           <div className="nav-center">
@@ -24,6 +26,8 @@ export default function Navpan() {
           </div>
           <div className="nav-right">
             <Button variant='warning'>Contact Me</Button>
+          </div>
+          <div className="nav-right2"><VscThreeBars size={35}/> 
           </div>
         </div>
       </div>
