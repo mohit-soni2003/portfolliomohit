@@ -24,11 +24,12 @@ export default function Footerpan() {
     <>
 
     <div className="footer">
-        <div className="footer-left">
+        <div className="footer-left" data-aos="fade-right">
         <div className="footer-left-l1">Mohit Soni</div>
         <div className="footer-left-l2">Webdeveloper || Freelancer</div>
+        <div className="footer-left-l2">Total Visitor : <span class="counter">1000</span></div>
         </div>
-        <div className="footer-mid">
+        <div className="footer-mid" data-aos="fade-up">
         <div className="footer-mid-l1">About Me</div>
         <div className="footer-mid-l2">
             <div><Link>Skills</Link></div>
@@ -37,7 +38,7 @@ export default function Footerpan() {
             <div><Link>Contact Me</Link></div>
         </div>
         </div>
-        <div className="footer-right">
+        <div className="footer-right" data-aos="fade-left">
             <div className="footer-right-l1">
                  Follow
             </div>

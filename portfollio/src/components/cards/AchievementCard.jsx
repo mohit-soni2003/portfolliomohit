@@ -7,7 +7,7 @@ import { FaAnglesDown } from "react-icons/fa6";
 
 export default function AchievementCard({achievement}) {
     return (
-        <div className=" achievement-card">
+        <div className=" achievement-card" data-aos="flip-left">
             <div className="achievement-image">
                 <img src={achievement.image} alt="" />
             </div>

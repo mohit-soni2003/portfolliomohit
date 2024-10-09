@@ -13,13 +13,13 @@ export default function Page8() {
     return (
         <>
             <div className="page8">
-                <div className="pg-heading pg8-heading">
+                <div className="pg-heading pg8-heading" data-aos="fade-right">
                     Contact Me
                 </div>
 
                 <div className="pg8-container">
-                    <div className="pg8-left">
-                        <div className="heading2">
+                    <div className="pg8-left" data-aos="fade-right">
+                        <div className="heading2" >
                             Let's Connect With me :
                         </div>
 
@@ -56,7 +56,7 @@ export default function Page8() {
 
                     </div>
                     {/* --------------Contact Form -------------- */}
-                    <div className="pg8-right">
+                    <div className="pg8-right" data-aos="fade-left">
                         <div className="pg8-right-l1">I am always Open to discuss and <br /> <span>Colloborate with you</span></div>
                         <div className="form-table">
                             <table>

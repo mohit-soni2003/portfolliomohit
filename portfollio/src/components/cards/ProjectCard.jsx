@@ -6,7 +6,7 @@ import { FaAnglesDown } from "react-icons/fa6";
 export default function ProjectCard({project}) {
     return (
         <>
-            <div className="project-card">
+            <div className="project-card" data-aos="flip-left" >
                 <div className="project-image">
                     <img src={project.image} alt="" />
                 </div>

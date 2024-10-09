@@ -19,15 +19,15 @@ export default function Page2() {
         <>
             <div className="page-2">
 
-                <div className="pg-2-heading pg-heading">
+                <div className="pg-2-heading pg-heading"  data-aos="fade-right">
                     About Me
                 </div>
 
                 <div className="abt-me-container">
-                    <div className="abt-me-photo">
+                    <div className="abt-me-photo"   data-aos="fade-right" >
                         <img src={hackindoregrp} alt="" />
                     </div>
-                    <div className="abt-me-desc">
+                    <div className="abt-me-desc" data-aos="fade-up">
                         <h1>I'm {personal_detail.name}</h1>
                         <div className="abt-me-caption">
                             As a 3rd-year engineering student at IET DAVV, I’m passionate about leveraging technologies like Data Structures & Algorithms, Java, DBMS, SQL, and the MERN stack to develop working prototypes. I had participated in tech competitions, hackathons, and workshops, focusing on web and mobile app development, and programming solutions.
