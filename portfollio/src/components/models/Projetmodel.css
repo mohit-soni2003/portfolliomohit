@@ -1,0 +1,21 @@
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(128, 214, 214, 0.692);
+    z-index: 1000; /* Ensure the modal wrapper is above other content */
+}
+
+.project-model {
+    background-color: aliceblue;
+    border: 2px solid gray;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the modal */
+    z-index: 1001; /* Ensure the modal is above the wrapper */
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}

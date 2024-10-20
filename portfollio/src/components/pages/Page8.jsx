@@ -1,4 +1,4 @@
-import React from 'react'
+import {React , useState} from 'react'
 import "./Page8.css"
 import "../utility/syle.css"
 import "../utility/utility.css"
@@ -8,8 +8,12 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
 
+//modal
+import Projetmodel from '../models/Projetmodel';
+
 
 export default function Page8() {
+    const [showmodal, setshowmodal] = useState(false)
     return (
         <>
             <div className="page8" id='contact'>
@@ -74,12 +78,13 @@ export default function Page8() {
                             </tr>
                             
                             </table>
-                            <div className="send-msg">Send Message</div>
+                            <div className="send-msg" onClick={()=>setshowmodal(true)}>Send Message</div>
                         </div>
                     </div>
 
                 </div>
             </div>
+            {showmodal && <Projetmodel  setshowmodal={setshowmodal}/>}
         </>
     )
 }
