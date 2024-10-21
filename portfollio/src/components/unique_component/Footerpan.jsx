@@ -1,4 +1,4 @@
-import React from 'react'
+import {React , useEffect , useState} from 'react'
 import "./Footerpan.css"
 import { Link } from "react-router-dom";
 
@@ -20,6 +20,21 @@ import { SiCodeforces } from "react-icons/si";
 
 
 export default function Footerpan() {
+
+const [cnt, setcnt] = useState(0);
+useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await fetch('http://localhost:8000/count');
+        const result = await res.json();
+        setcnt(result.count); // Assuming result contains a field called 'count'
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
   return (
     <>
 
@@ -27,7 +42,7 @@ export default function Footerpan() {
         <div className="footer-left" data-aos="fade-right">
         <div className="footer-left-l1">Mohit Soni</div>
         <div className="footer-left-l2">Webdeveloper || Freelancer</div>
-        <div className="footer-left-l2">Total Visitor : <span class="counter">1000</span></div>
+        <div className="footer-left-l2">Total Visitor : <span class="counter">{cnt}</span></div>
         </div>
         <div className="footer-mid" data-aos="fade-up">
         <div className="footer-mid-l1">About Me</div>
