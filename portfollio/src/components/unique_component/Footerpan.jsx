@@ -21,11 +21,12 @@ import { SiCodeforces } from "react-icons/si";
 
 export default function Footerpan() {
 
-const [cnt, setcnt] = useState(0);
+const [cnt, setcnt] = useState("fetching..");
 useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch('http://localhost:8000/count');
+        // const res = await fetch('http://localhost:8000/count');
+        const res = await fetch('https://portfollioserver-one.vercel.app/count');
         const result = await res.json();
         setcnt(result.count); // Assuming result contains a field called 'count'
       } catch (error) {
@@ -51,6 +52,7 @@ useEffect(() => {
             <div><Link>Achievement</Link></div>
             <div><Link>Project</Link></div>
             <div><Link>Contact Me</Link></div>
+            <div><Link to="/login">Develope Login</Link></div>
         </div>
         </div>
         <div className="footer-right" data-aos="fade-left">

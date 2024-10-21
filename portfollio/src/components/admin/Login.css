@@ -1,0 +1,48 @@
+.admin-login{
+    /* border: 2px solid red; */
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.ad-login-heading{
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(183, 255, 251);
+}
+.ad-login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 2px solid rgb(164, 237, 255); */
+    width: 400px;
+    padding: 20px;
+}
+.ad-login-container>div{
+    margin: 10px;
+    color: rgb(181, 245, 255);
+}
+.admin-login input{
+    border-radius: 3px;
+    color: black;
+    padding: 3px 10px;
+    width: 100%;
+}
+.ad-btn-container{
+}
+.ad-login-border{
+    border: 0px solid rgb(72, 115, 255);
+    background-color: rgba(146, 242, 255, 0.095);
+    border-radius: 10px;
+    padding:20px 0px;
+    box-shadow: 0px 0px 20px 1px rgb(0, 251, 255);
+
+}
+.ad-btn-container button{
+    width: 340px;
+    padding: 5px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}

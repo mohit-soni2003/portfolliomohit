@@ -22,7 +22,8 @@
     font-size: 1.3rem;
 }
 .footer-mid-l1{
-    font-size: 1.3rem;
+    text-align: center;
+    font-size: 1.5rem;
 }
 .footer-mid-l2{
     display: flex;
