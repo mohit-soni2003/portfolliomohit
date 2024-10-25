@@ -1,0 +1,16 @@
+.admin-dashboard{
+    width: 100%;
+    max-width: 1200px;
+    border: 1px solid gainsboro;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+}
+.dasboard-left{
+    border: 1px solid gainsboro;
+    width: 30%;
+}
+.dasboard-right{
+    border: 1px solid gainsboro;
+    width: 65%;
+}

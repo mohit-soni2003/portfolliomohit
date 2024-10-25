@@ -1,0 +1,31 @@
+.dasboard-sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sidebar-profile{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.204);
+}
+.sidebar-profile-image{
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+}
+.sidebar-profile-image img{
+    height: 140px;
+    width: 140px;
+    border-radius: 10px;
+}
+.sidebar-profile-name{
+    font-size: 1.5rem;
+    margin-top: 10px;
+}

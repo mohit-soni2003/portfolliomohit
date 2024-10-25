@@ -11,6 +11,7 @@ import Page6 from './pages/Page6'
 import Page7 from './pages/Page7'
 import Page8 from './pages/Page8'
 import Projetmodel from './models/Projetmodel'
+import Dashboard from './admin/Dashboard'
 
 export default function Page() {
   return (
@@ -32,7 +33,7 @@ export default function Page() {
             <Footerpan></Footerpan>
           </div>
         </div>
-        {/* <Page7></Page7> */}
+        <Dashboard></Dashboard>
       </div>
     </>
   )
