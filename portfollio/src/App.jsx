@@ -6,26 +6,31 @@ import Button from 'react-bootstrap/Button';
 
 import Page8 from './components/pages/Page8';
 import Login from './components/admin/Login';
-
-
-
 import Page from './components/Page';
+//admin component
+import Dashboard from './components/admin/Dashboard';
+import ProtectedRoute from './ProtectedRoute';
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  return (
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Page />}></Route>
+          <Route path="/login" element={<Login />}></Route>
 
- return (
-  <> 
-  <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Page/>}></Route>
-        <Route path="/login" element={<Login/>}></Route>
+          <Route element={<ProtectedRoute />}>
+            <Route path="/dashboard" element={<Dashboard />}></Route>
+
+          </Route>
+
           {/* <Route path="*" element={<NoPage />} /> */}
-        
-      </Routes>
-    </BrowserRouter>
-  </>
- )
+
+        </Routes>
+      </BrowserRouter>
+    </>
+  )
 }
 
 export default App

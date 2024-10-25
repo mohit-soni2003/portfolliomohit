@@ -1,7 +1,7 @@
 import React from 'react'
 import "./DashboardSidebar.css"
 import {Link} from "react-router-dom"
-import image from "../../../public/images/formal.jpg"
+import image from "/images/formal.jpg"
 
 export default function DashboardSidebar() {
   return (
