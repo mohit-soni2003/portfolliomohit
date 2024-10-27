@@ -1,16 +1,30 @@
 .admin-dashboard{
-    width: 100%;
-    max-width: 1200px;
-    border: 1px solid gainsboro;
+    width: clamp(800px , 90% , 1200px);
+    /* border: 5px solid gainsboro; */
+    padding: 3% 0px;
     display: flex;
     justify-content: space-between;
     margin: 0px auto;
 }
 .dasboard-left{
-    border: 1px solid gainsboro;
-    width: 30%;
+    background-color: rgb(247, 254, 255);
+    box-shadow: 3px 3px 10px 1px gainsboro;
+    border-radius: 5px;
+    width: clamp(200px , 23% ,300px)
 }
 .dasboard-right{
-    border: 1px solid gainsboro;
-    width: 65%;
+    padding: 15px 20px;
+    background-color: rgb(247, 254, 255);
+    box-shadow: 3px 3px 10px 3px gainsboro;
+    border-radius: 5px;
+    width: clamp(600px , 73% , 900px) 
 }
+.das-right-top{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(220, 220, 220, 0.504);
+    display: flex;
+    justify-content: space-between;
+}
+

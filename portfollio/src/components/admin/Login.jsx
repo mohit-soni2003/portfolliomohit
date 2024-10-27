@@ -22,6 +22,7 @@ export default function Login() {
         event.preventDefault();
         console.log(username)
         console.log(password)
+        // fetch('http://localhost:8000/adminlogin', {
         fetch('http://localhost:8000/adminlogin', {
             method: "POST",
             headers: { "Content-Type": "application/json" }, // Correct Content-Type

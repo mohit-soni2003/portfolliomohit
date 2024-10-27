@@ -1,4 +1,5 @@
 import React from 'react'
+import DashboardSidebar from './DashboardSidebar'
 
 export default function Analytics() {
   return (

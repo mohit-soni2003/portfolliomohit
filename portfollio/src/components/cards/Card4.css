@@ -1,0 +1,36 @@
+.card-4{
+box-shadow: 3px 3px 10px 0px gainsboro;
+display: flex;
+justify-content: space-between;
+width: clamp(700px , 100% , 1100px);
+}
+.card-4>div{
+    margin: 0px 10px;
+}
+.c4-sec1{
+display: flex;
+align-items: center;
+width: clamp(100px,30% , 200px);
+/* border: 1px solid red; */
+}
+.c4-sec3{
+    width: 35%;
+    justify-content: space-between;
+}
+.c4-sec2{
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.c4-sec1 img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+}
+.c4-name{
+    font-size: 1.2rem;
+    font-weight: 500;
+}

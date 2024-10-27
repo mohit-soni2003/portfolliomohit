@@ -1,5 +1,5 @@
 import React from 'react'
-
+import DashboardSidebar from './DashboardSidebar'
 export default function Education() {
   return (
 <div className="admin-dashboard">
