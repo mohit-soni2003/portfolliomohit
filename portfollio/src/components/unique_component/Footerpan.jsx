@@ -31,7 +31,9 @@ useEffect(() => {
         setcnt(result.count); // Assuming result contains a field called 'count'
       } catch (error) {
         console.error('Error fetching data:', error);
+        setcnt('Unable to load');
       }
+      
     };
 
     fetchData();

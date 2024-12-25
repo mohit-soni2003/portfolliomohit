@@ -1,0 +1,8 @@
+.card5-container{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.card5-part3>button{
+    margin: 0px 12px;
+}

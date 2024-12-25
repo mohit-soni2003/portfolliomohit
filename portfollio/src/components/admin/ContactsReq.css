@@ -1,0 +1,16 @@
+.admin-contact-heading{
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-bottom: 2px solid rgb(240, 240, 240);
+    padding-bottom: 10px;
+}
+.contact-card{
+    padding: 10px;
+    /* border: 2px solid gainsboro; */
+    box-shadow: 1px 1px 10px 2px rgba(220, 220, 220, 0.723);
+    margin: 20px 0px;
+    border-radius: 10px;
+}
+.contact-card:hover{
+    background-color: rgba(239, 239, 239, 0.312);
+}

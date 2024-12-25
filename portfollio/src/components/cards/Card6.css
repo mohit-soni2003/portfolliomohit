@@ -1,0 +1,38 @@
+.card6{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    width: 100%;
+
+}
+
+.card6-sec1{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    font-weight: 500;
+    justify-content: center;
+}
+.card6-sec2{
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    justify-content: center;
+}
+.card6-sec3{
+    display: flex;
+    align-items: center;
+}
+.card6-sec3>button{
+margin: 0px 20px;
+}
+.card6-img{
+    width: 110px;
+    height: 110px;
+}
+.card6-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}

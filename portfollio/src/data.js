@@ -25,7 +25,7 @@ const edu_qualification = [
     },
     {
         year:"2020-2021",
-        qualification_name:"11th Standard MPBSE",
+        qualification_name:"12th Standard MPBSE",
         institute_name:"Shree Neema Vidhya Niketan",
         score:"84%"
     },
