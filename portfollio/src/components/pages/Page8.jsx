@@ -32,7 +32,8 @@ export default function Page8() {
         // Fetch the personal details when the component mounts
         const fetchPersonalDetails = async () => {
             try {
-                const response = await fetch('http://localhost:8000/getpersonaldetail');
+                // const response = await fetch('http://localhost:8000/getpersonaldetail');
+                const response = await fetch('https://portfollioserver-one.vercel.app/getpersonaldetail');
                 if (!response.ok) {
                     throw new Error('Failed to fetch personal details');
                 }
@@ -58,7 +59,8 @@ export default function Page8() {
     const handleFormSubmit = async (e) => {
         e.preventDefault(); // Prevent default form submission
         try {
-            const response = await fetch('http://localhost:8000/submit-form', {
+            // const response = await fetch('http://localhost:8000/submit-form', {
+            const response = await fetch('https://portfollioserver-one.vercel.app/submit-form', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

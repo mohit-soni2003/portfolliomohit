@@ -16,7 +16,8 @@ export default function Page3() {
 
     useEffect(() => {
         // Fetch skills from API
-        fetch('http://localhost:8000/getskills')
+        // fetch('http://localhost:8000/getskills')
+        fetch('https://portfollioserver-one.vercel.app/getskills')
             .then((response) => {
                 if (!response.ok) {
                     throw new Error('Failed to fetch skills');
