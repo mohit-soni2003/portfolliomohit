@@ -58,7 +58,7 @@
     padding: 10px 10px 10px 0px;
 }
 
-.form-table input {
+.form-table input , .form-table textarea {
     width: 100%; /* Input elements take the full width of td */
     height: 55px;
     background-color: rgb(232, 237, 255);

@@ -94,6 +94,13 @@ const achievement=[
         desc:"Twice qualified internal round, out 100+ teams our team made position in top 30. ",
         image:"https://i.ibb.co/cvn3xS7/image.png",
     },
+    {
+        name:"SIH 2024 Finalist",
+        Organised_by:"Ministry Of Education",
+        mode:"offline",
+        desc:"Our team was Shortlisted in top 5 teams for Grand Finale round of SiH 2024 ",
+        image:"https://i.ibb.co/kKDpT8m/sih20241.jpg",
+    },
     
 ]
 

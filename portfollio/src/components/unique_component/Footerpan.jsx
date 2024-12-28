@@ -1,6 +1,6 @@
 import {React , useEffect , useState} from 'react'
 import "./Footerpan.css"
-import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 
 // data import--------
 import { social_links } from '../../data';
@@ -50,10 +50,10 @@ useEffect(() => {
         <div className="footer-mid" data-aos="fade-up">
         <div className="footer-mid-l1">About Me</div>
         <div className="footer-mid-l2">
-            <div><Link>Skills</Link></div>
-            <div><Link>Achievement</Link></div>
-            <div><Link>Project</Link></div>
-            <div><Link>Contact Me</Link></div>
+            <div><Link to="#skill">Skills</Link></div>
+            <div><Link to="#achievement">Achievements</Link></div>
+            <div><Link to="#project">Project</Link></div>
+            <div><Link to="#contact">Contact Me</Link></div>
             <div><Link to="/login">Develope Login</Link></div>
         </div>
         </div>
