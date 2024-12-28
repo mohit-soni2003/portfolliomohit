@@ -1,0 +1,10 @@
+.carousel-img{
+    height: 75vh;
+}
+.carousel-item{
+    border: 0px solid red;
+}
+.carousel-item img{
+    margin: 0px auto;
+    display: block;
+}

@@ -39,6 +39,9 @@ content:  'Skills';
 .pg8-heading::before{
     content: 'Contact Me';
 }
+.gallery-heading::before{
+    content: 'Gallery';
+}
 
 .heading2{
     font-size: 2rem;

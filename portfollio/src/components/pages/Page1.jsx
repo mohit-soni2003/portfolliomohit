@@ -1,4 +1,4 @@
-import React from 'react'
+import { React, useState, useEffect } from 'react'
 import "./Page1.css"
 import "../utility/utility.css"
 import "../utility/syle.css"
@@ -13,16 +13,56 @@ import { FaGithub } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { SiGeeksforgeeks } from "react-icons/si";
 
-import {Link} from "react-router-dom"  
+import { Link } from "react-router-dom"
 import { social_links } from '../../data';
 import { personal_detail } from '../../data';
 
+
+
+
+
 export default function Page1() {
-    return ( 
+    const [personalDetail, setPersonalDetail] = useState(null);  // To store fetched data
+    const [loading, setLoading] = useState(true);                // To manage loading state
+    const [error, setError] = useState(null);                    // To manage error state
+
+    useEffect(() => {
+        // Fetch the personal details when the component mounts
+        const fetchPersonalDetails = async () => {
+            try {
+                const response = await fetch('http://localhost:8000/getpersonaldetail');
+                if (!response.ok) {
+                    throw new Error('Failed to fetch personal details');
+                }
+                const data = await response.json();
+                setPersonalDetail(data.personalDetail);  // Set the fetched data to state
+                setLoading(false);                       // Update loading state
+            } catch (err) {
+                setError(err.message);  // Set error message in case of failure
+                setLoading(false);       // Update loading state even on error
+            }
+        };
+
+        fetchPersonalDetails();  // Call the function to fetch data
+    }, []);  // Empty dependency array to ensure it runs only once when the component mounts
+
+    if (loading) {
+        return (
+            <div>Loading...</div>  // Show loading message while data is being fetched
+        )
+    }
+
+    if (error) {
+        return (
+            <div>Error: {error}</div>  // Show error message if something goes wrong
+        )
+    }
+
+    return (
         <>
             <div className="page-1">
                 <div className="social-media" data-aos="fade-right">
-                    <div><Link to="/"><FaGlobe/></Link></div>
+                    <div><Link to="/"><FaGlobe /></Link></div>
                     <div><Link to={social_links.instagram} target='new'><FaSquareInstagram /></Link></div>
                     <div><Link to={social_links.linkedin} target='new'><FaLinkedin /></Link></div>
                     <div><Link to={social_links.youtube} target='new'><FaYoutube /></Link></div>
@@ -32,13 +72,13 @@ export default function Page1() {
                 </div>
                 <div className="profile">
                     <div className="profile-heading" data-aos="fade-right">
-                        This is {personal_detail.name}
+                        This is {personalDetail.name}
                     </div>
                     <div className="profile-tech" data-aos="fade-left">
-                        Data Structure and Algorithms || Java  || Database Management System(DBMA)|| SQL || Operating System || OOPS ||MongoDb|| Node || Express || React || React-Native|| MERN Stack Developer
+                        {personalDetail.desc1}
                     </div>
                     <div className="profile-desc" data-aos="fade-left">
-                        A proficient MERN Stack Developer with expertise in Data Structures & Algorithms, Java, OOPS , DBMS, SQL, and Operating Systems. Adept in full-stack development using MongoDB, Express, React, and Node, along with React Native for mobile app solutions, ensuring scalable and efficient software development.
+                        {personalDetail.desc2}
                     </div>
                     <div className="cnt-me-btn" data-aos="fade-up">
                         Contact Me &nbsp;
@@ -46,7 +86,7 @@ export default function Page1() {
                     </div>
                 </div>
                 <div className="profile-photo" data-aos="fade-up">
-                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQH6WKwUeusC4Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709314132180?e=1733356800&v=beta&t=YgAfVZw3eQ_UBU5iBQfMTyvn5kIUdm8LYo5gic2_sCQ" alt="" />
+                    <img src={personalDetail.photo1} alt="" />
                 </div>
             </div>
         </>

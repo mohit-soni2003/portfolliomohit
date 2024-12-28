@@ -6,7 +6,7 @@ export default function Card2({ skill }) {
         <>
             <div className="card2">
                 <div className="card2-l1">
-                    <div>{skill.skill}</div>
+                    <div>{skill.skillname}</div>
                     <div>{skill.percentage}</div> {/* Display percentage */}
                 </div>
                 <div className="card2-bar">

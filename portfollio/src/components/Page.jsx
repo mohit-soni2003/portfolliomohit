@@ -12,6 +12,7 @@ import Page7 from './pages/Page7'
 import Page8 from './pages/Page8'
 import Projetmodel from './models/Projetmodel'
 import Dashboard from './admin/Dashboard'
+import Gallery from './pages/Galley'
 
 export default function Page() {
   return (
@@ -26,6 +27,7 @@ export default function Page() {
           <Page4></Page4>
           <Page5></Page5>
           <Page6></Page6>
+          <Gallery></Gallery>
           <Page8></Page8>
         </div>
         <div className="width100">

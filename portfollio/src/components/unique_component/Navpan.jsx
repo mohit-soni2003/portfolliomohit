@@ -25,7 +25,8 @@ export default function Navpan() {
               <div className="nav-link"><Link to="#skill">Skills</Link></div>
               <div className="nav-link"><Link to="#competition">Competitions</Link></div>
               <div className="nav-link"><Link to="#achievement">Achievements</Link></div>
-              <div className="nav-link"><Link to="#contact">Projects</Link></div>
+              <div className="nav-link"><Link to="#project">Projects</Link></div>
+              <div className="nav-link"><Link to="#gallery">Gallery</Link></div>
             </div>
             <div className="nav-right">
               <Link to="#contact">

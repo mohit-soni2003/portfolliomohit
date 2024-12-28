@@ -1,4 +1,4 @@
-import React from 'react'
+import { React, useState, useEffect } from 'react'
 import "./Page2.css"
 import "../utility/utility.css"
 import "../utility/syle.css"
@@ -15,6 +15,43 @@ import formal from "/images/formal.jpg"
 import hackindoregrp from "/images/hackindoregrp.jpg"
 
 export default function Page2() {
+
+     const [personalDetail, setPersonalDetail] = useState(null);  // To store fetched data
+        const [loading, setLoading] = useState(true);                // To manage loading state
+        const [error, setError] = useState(null);                    // To manage error state
+    
+        useEffect(() => {
+            // Fetch the personal details when the component mounts
+            const fetchPersonalDetails = async () => {
+                try {
+                    const response = await fetch('http://localhost:8000/getpersonaldetail');
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch personal details');
+                    }
+                    const data = await response.json();
+                    setPersonalDetail(data.personalDetail);  // Set the fetched data to state
+                    setLoading(false);                       // Update loading state
+                } catch (err) {
+                    setError(err.message);  // Set error message in case of failure
+                    setLoading(false);       // Update loading state even on error
+                }
+            };
+    
+            fetchPersonalDetails();  // Call the function to fetch data
+        }, []);  // Empty dependency array to ensure it runs only once when the component mounts
+    
+        if (loading) {
+            return (
+                <div>Loading...</div>  // Show loading message while data is being fetched
+            )
+        }
+    
+        if (error) {
+            return (
+                <div>Error: {error}</div>  // Show error message if something goes wrong
+            )
+        }
+    
     return (
         <>
             <div className="page-2" id='about'>
@@ -25,12 +62,12 @@ export default function Page2() {
 
                 <div className="abt-me-container">
                     <div className="abt-me-photo"   data-aos="fade-right" >
-                        <img src={hackindoregrp} alt="" />
+                        <img src={personalDetail.photo2} alt="" />
                     </div>
                     <div className="abt-me-desc" data-aos="fade-up">
-                        <h1>I'm {personal_detail.name}</h1>
+                        <h1>I'm {personalDetail.name}</h1>
                         <div className="abt-me-caption">
-                            As a 3rd-year engineering student at IET DAVV, I’m passionate about leveraging technologies like Data Structures & Algorithms, Java, DBMS, SQL, and the MERN stack to develop working prototypes. I had participated in tech competitions, hackathons, and workshops, focusing on web and mobile app development, and programming solutions.
+                        {personalDetail.desc3}
                         </div>
                         {/* ---------Feture------ */}
                         <div className="pg-2-feature-cont">

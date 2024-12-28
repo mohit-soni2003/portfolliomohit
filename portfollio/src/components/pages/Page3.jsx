@@ -1,4 +1,4 @@
-import React from 'react'
+import { React, useState, useEffect } from 'react'
 
 import Card1 from '../cards/card1.jsx'
 import Card2 from '../cards/Card2.jsx'
@@ -10,6 +10,30 @@ import "./Page3.css"
 
 import { skill,edu_qualification} from '../../data'
 export default function Page3() {
+    const [skills, setSkills] = useState([]); // State to store skills
+    const [loading, setLoading] = useState(true); // Loading state
+    const [error, setError] = useState(null); // Error state
+
+    useEffect(() => {
+        // Fetch skills from API
+        fetch('http://localhost:8000/getskills')
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error('Failed to fetch skills');
+                }
+                return response.json();
+            })
+            .then((data) => {
+                setSkills(data.skills); // Update skills state with fetched data
+                setLoading(false); // Set loading to false
+            })
+            .catch((err) => {
+                console.error(err);
+                setError(err.message); // Set error message
+                setLoading(false); // Set loading to false
+            });
+    }, []);
+
     return (
         <>
             <div className="page3" id='skill'>
@@ -33,9 +57,18 @@ export default function Page3() {
                         ))}
                     </div>
                     <div className="skillcontainer" data-aos="fade-left">
-                        {skill.map((item) => (
-                            <div className="skill-card2"><Card2 skill={item}></Card2></div>
-                        ))}
+                        {/* Show loading, error, or skills */}
+                        {loading ? (
+                            <div>Loading skills...</div>
+                        ) : error ? (
+                            <div>Error: {error}</div>
+                        ) : (
+                            skills.map((item) => (
+                                <div className="skill-card2" >
+                                    <Card2 skill={item} />
+                                </div>
+                            ))
+                        )}
                     </div>
                 </div>
 

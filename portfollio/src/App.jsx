@@ -18,15 +18,18 @@ import Education from "./components/admin/Education"
 import Profile from "./components/admin/Profile"
 import Projects from "./components/admin/Projects"
 import Skill from "./components/admin/Skill"
+import Maintainence from "./components/unique_component/Maintainence"
+
 
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter> 
         <Routes>
-          <Route path="/" element={<Page />}></Route>
-          <Route path="/login" element={<Login />}></Route>
+          {/* <Route path="/" element={<Page />}></Route>
+          <Route path="/login" element={<Login />}></Route> */}
+          <Route path="*" element={<Maintainence />}></Route>
 
           <Route element={<ProtectedRoute />}>
             <Route path="/dashboard" element={<Dashboard />}></Route>
