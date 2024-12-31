@@ -35,7 +35,6 @@ export default function Page() {
             <Footerpan></Footerpan>
           </div>
         </div>
-        <Dashboard></Dashboard>
       </div>
     </>
   )

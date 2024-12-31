@@ -17,8 +17,8 @@ function Gallery() {
                         alt="Second slide"
                     />
                     <Carousel.Caption>
-                        <h3>SIH 2024 Grand Finale</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3 className='carousel-img-text'>SIH 2024 Grand Finale</h3>
+                        {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
                     </Carousel.Caption>
                 </Carousel.Item>
 
@@ -29,9 +29,9 @@ function Gallery() {
                         alt="Third slide"
                     />
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
+                        <h3 className='carousel-img-text'>SIH Memories</h3>
                         <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                            {/* Praesent commodo cursus magna, vel scelerisque nisl consectetur. */}
                         </p>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -42,9 +42,9 @@ function Gallery() {
                         alt="Third slide"
                     />
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                    <h3 className='carousel-img-text'>VVCE College</h3>
+                    <p>
+                            {/* Praesent commodo cursus magna, vel scelerisque nisl consectetur. */}
                         </p>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -56,8 +56,8 @@ function Gallery() {
                         alt="Second slide"
                     />
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 className='carousel-img-text'>Hack'Indore Hackhthon</h3>
+                    {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={2000}>
@@ -67,8 +67,8 @@ function Gallery() {
                         alt="Second slide"
                     />
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 className='carousel-img-text'></h3>
+                    {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={2000}>
@@ -78,8 +78,8 @@ function Gallery() {
                         alt="Second slide"
                     />
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 className='carousel-img-text'>HackIndore Acropolis <br />Engineering college</h3>
+                    {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={2000}>
@@ -89,8 +89,8 @@ function Gallery() {
                         alt="Second slide"
                     />
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 className='carousel-img-text'>SMART INDIA HACKHTHON</h3>
+                    {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

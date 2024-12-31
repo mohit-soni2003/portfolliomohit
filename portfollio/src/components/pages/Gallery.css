@@ -1,10 +1,27 @@
+
 .carousel-img{
     height: 75vh;
 }
 .carousel-item{
     border: 0px solid red;
+    /* width: clamp(1200px, 90% , 300px); */
+
 }
 .carousel-item img{
     margin: 0px auto;
     display: block;
 }
+.carousel-img-text{
+    background-color: rgba(0, 0, 0, 0.308);
+    display: inline;
+    padding: 5px 30px;
+    font-size: 1.2rem;
+}
+
+
+@media (max-width: 500px) {
+    .carousel-img{
+        border: 0px solid red;
+        width: 100%;
+    }
+  }

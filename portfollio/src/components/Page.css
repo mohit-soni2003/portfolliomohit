@@ -1,6 +1,6 @@
 .main-pg-container , .main-footer-container{
    width: clamp(850px, 75%, 1200px);
-   margin: 1.5% auto;
+   margin: 0% auto;
 }
 
 .main-footer-container{

@@ -27,6 +27,7 @@ export default function Page8() {
     const [loading, setLoading] = useState(true);                // To manage loading state
     const [error, setError] = useState(null);                    // To manage error state
     const [submitStatus, setSubmitStatus] = useState(null);      // To track form submission status
+    const [submitani, setSubmitani] = useState(false);      // To track form submission status
     
     useEffect(() => {
         // Fetch the personal details when the component mounts
@@ -57,6 +58,7 @@ export default function Page8() {
 
     // Handle form submission
     const handleFormSubmit = async (e) => {
+        setSubmitani(true);
         e.preventDefault(); // Prevent default form submission
         try {
             // const response = await fetch('http://localhost:8000/submit-form', {
@@ -73,9 +75,11 @@ export default function Page8() {
             }
 
             const result = await response.json();
+            setSubmitani(false);
             setSubmitStatus('Form submitted successfully!');
             setFormData({ name: '', phoneno: '', email: '', subject: '', description: '' }); // Reset form
         } catch (err) {
+            setSubmitani(false);
             setSubmitStatus(`Error: ${err.message}`);
         }
     };
@@ -195,6 +199,7 @@ export default function Page8() {
                             <button type="submit" className="send-msg">Send Message</button>
                         </form>
                         {submitStatus && <div>{submitStatus}</div>}
+                        {submitani && <div>Submitting</div>}
                     </div>
                 </div>
             </div>

@@ -90,7 +90,15 @@ export default function Page2() {
                             </div>
                         </div>
 
-                        <div className="down-cv-btn">Download CV &nbsp;<FaFileDownload size={21} />
+                        <div className="down-cv-btn">
+                        <a 
+                                href="/cv.pdf" 
+                                download="My_CV.pdf" 
+                                style={{ textDecoration: 'none', color: 'inherit' }}
+                            >
+                                Download CV &nbsp;<FaFileDownload size={21} />
+                            </a>
+                            
                         </div>
                     </div>
 
