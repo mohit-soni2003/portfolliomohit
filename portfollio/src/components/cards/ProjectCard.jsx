@@ -1,9 +1,9 @@
 import React from 'react'
 import "./ProjectCard.css"
 import { FaAnglesDown } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
- 
-export default function ProjectCard({project}) {
+export default function ProjectCard({ project }) {
     return (
         <>
             <div className="project-card" data-aos="flip-left" >
@@ -17,7 +17,9 @@ export default function ProjectCard({project}) {
                     {project.description}
                 </div>
                 <div className="view-more">
-                    View More &nbsp; <FaAnglesDown />
+                    <Link to="/maintain">
+                        View More &nbsp; <FaAnglesDown />
+                    </Link>
 
                 </div>
             </div>

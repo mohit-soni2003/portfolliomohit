@@ -23,7 +23,7 @@ export default function Login() {
         console.log(username)
         console.log(password)
         // fetch('http://localhost:8000/adminlogin', {
-        fetch('http://localhost:8000/adminlogin', {
+            fetch('https://portfollioserver-one.vercel.app/adminlogin', {
             method: "POST",
             headers: { "Content-Type": "application/json" }, // Correct Content-Type
             credentials: "include",

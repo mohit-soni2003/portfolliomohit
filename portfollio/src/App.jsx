@@ -29,6 +29,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Page />}></Route>
           <Route path="/login" element={<Login />}></Route>
+          <Route path="/maintain" element={<Maintainence/>}></Route>
           <Route path="*" element={<Maintainence />}></Route>
 
           <Route element={<ProtectedRoute />}>

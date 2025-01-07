@@ -39,6 +39,10 @@
     font-weight: 600;
     margin: 0px 10px;
     margin-bottom: 15px;
+    text-decoration: none;
+}
+.view-more a{
+    text-decoration: none;
 }
 .view-more:hover{
     color: var(--hover-color);
