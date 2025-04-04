@@ -36,26 +36,26 @@ export default function Page1() {
                     throw new Error('Failed to fetch personal details');
                 }
                 const data = await response.json();
-                setPersonalDetail(data.personalDetail);  // Set the fetched data to state
-                setLoading(false);                       // Update loading state
+                setPersonalDetail(data.personalDetail);  
+                setLoading(false);                       
             } catch (err) {
-                setError(err.message);  // Set error message in case of failure
-                setLoading(false);       // Update loading state even on error
+                setError(err.message);  
+                setLoading(false);       
             }
         };
 
-        fetchPersonalDetails();  // Call the function to fetch data
-    }, []);  // Empty dependency array to ensure it runs only once when the component mounts
+        fetchPersonalDetails();  
+    }, []);  
 
     if (loading) {
         return (
-            <div>Loading...</div>  // Show loading message while data is being fetched
+            <div>Loading...</div>
         )
     }
 
     if (error) {
         return (
-            <div>Error: {error}</div>  // Show error message if something goes wrong
+            <div>Error: {error}</div>  
         )
     }
 
@@ -87,7 +87,7 @@ export default function Page1() {
                     </div>
                 </div>
                 <div className="profile-photo" data-aos="fade-up">
-                    <img src={personalDetail.photo1} alt="" />
+                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQGHSM7hamqwuw/profile-displayphoto-shrink_400_400/B4DZVcDlWdHwAg-/0/1741006198763?e=1749081600&v=beta&t=Kkzav2KjEtwkU3WKEYf5AftPjW1mz2QH1REk2EQSHJQ" alt="" />
                 </div>
             </div>
         </>
