@@ -87,7 +87,7 @@ export default function Page1() {
                     </div>
                 </div>
                 <div className="profile-photo" data-aos="fade-up">
-                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQGHSM7hamqwuw/profile-displayphoto-shrink_400_400/B4DZVcDlWdHwAg-/0/1741006198763?e=1749081600&v=beta&t=Kkzav2KjEtwkU3WKEYf5AftPjW1mz2QH1REk2EQSHJQ" alt="" />
+                    <img src="https://res.cloudinary.com/drl3qqrq3/raw/upload/v1757520831/eza5swsw7p28sr4vh1pj.jpeg" alt="" />
                 </div>
             </div>
         </>
